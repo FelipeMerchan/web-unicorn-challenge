@@ -1,0 +1,31 @@
+:root {
+  --grayColor: #fcfcfc;
+  --blue: #1a1a4c;
+  --red: #e92042;
+  --white: white;
+  --background: #f7fcff;
+  /* tipografías */
+  --fontSmall: 12px;
+  --fontMedium: 17px;
+  --fontSubtitle: 36px;
+  --fontTitle: 64px;
+  --fontColor: #596188;
+
+  /* Tamaños */
+  --borderRadius: 5px;
+
+  --cards {
+    width: fit-content;
+    background-color: var(--grayColor);
+    display: flex;
+    aling-items: center;
+    font-size: var(--fontMedium);
+    box-shadow: 4px 5px 15px -10px rgba(0,0,0,0.75);
+    padding: 2%;
+    border-radius: var(--borderRadius);
+  };
+}
+
+@custom-media --mobile screen and (width <= 600px);
+@custom-media --ipad screen and (width <=768px);
+@custom-media --desktop screen and (width <= 1023px);
